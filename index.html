@@ -52,7 +52,7 @@
         display: block;
         color: #144F38;
         margin: 12px;
-        border-width: 1px;
+        border-top: 1px;
         border-style: solid;
         width: auto;
       }
@@ -67,22 +67,21 @@
       }
       button {
         display: block;
-        margin: 30px auto;
+        margin: 50px auto;
         background: #144F38;
         border: none;
         color: white;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         padding: 15px;
         font-size: 14px;
-        border-radius: 5px;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-        transition: all 200ms ease-in-out;
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+               
       }
       button:hover {
         cursor: pointer;
         background: white;
         color: #144F38;
-        font-weight: bold;
+        transition: all 200ms ease-in-out;
       }
       .block {
         background-color: white;
@@ -132,13 +131,13 @@ In 1982, FMR company started offering 401(k) products. In 1984, it offered compu
         <span class="email-link">Click to view more Fidelity Investments Wiki</span></em>
       </a>
     </p>
-    <hr />
+    <!-- <hr /> -->
     <p>
-      <button>Open an Account with Fidelity</button>
+      <button>Open Fidelity Account</button>
     </p>
     <h3>Coded by <a href="mailto:mlawry95@gmail.com"><span class="email-link">M.M. Lawry</span></a></h3>
     <script>  
-    function buy() {
+    function open() {
     let name = prompt("What is your name?");
     let age = prompt("How old are you?");
     if (age >= 18) {
@@ -149,7 +148,7 @@ In 1982, FMR company started offering 401(k) products. In 1984, it offered compu
       }
     }
     let buyCryptoButton = document.querySelector("button");
-    buyCryptoButton.addEventListener("click", buy);
+    buyCryptoButton.addEventListener("click", open);
     </script>
   </body>
 </html>
