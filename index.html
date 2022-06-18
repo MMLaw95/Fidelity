@@ -72,8 +72,9 @@
         border: none;
         color: white;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        padding: 15px;
-        font-size: 14px;
+        padding: 20px 30px;
+        font-size: 14px;        
+        border-radius: 0.25rem;
         box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
                
       }
@@ -139,12 +140,14 @@ In 1982, FMR company started offering 401(k) products. In 1984, it offered compu
     <script>  
     function open() {
     let name = prompt("What is your name?");
+    let capName = name.charAt(0).toUpperCase() + name.slice(1);
+    capName;
     let age = prompt("How old are you?");
     if (age >= 18) {
-      alert("Congrats " + name + ", you can start investing in your future today! 🤑");
+      alert("Congrats " + capName + ", you can start investing in your future today! 🤑");
       window.location = 'https://www.fidelity.com/';
       } else {
-      alert("Sorry " + name + ", you're not old enough for your own account just yet. 😢");
+      alert("Sorry " + capName + ", you're not old enough for your own account just yet. 😢");
       }
     }
     let buyCryptoButton = document.querySelector("button");
