@@ -5,17 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finance with Fidelity 💰</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
+
       body {
-        background: #e2ceba;
+        background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
       }
+      h1, .fidelity, .email-link {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+       h2, h3, p {
+        color: white;
+        font-family: 'Press Start 2P', cursive;
+        font-family: 'Roboto', sans-serif;
+       }
       h1 {
         text-align: center;
         border: 1px solid white;
         margin: 20px auto;
         color: #144F38;
         font-size: 100px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       }
       h2 {
         text-align: center;
@@ -24,13 +36,10 @@
         margin: 15px;
         padding: auto;
         font-size: 20px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
       }
       h3 {
         font-size: 13.5px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-align: center;
-        font-style: italic;
         padding: 15px;
         margin: 50px;
         font-weight: 100;
@@ -42,7 +51,6 @@
         padding: auto;
       }
       p {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         margin: 20px;
         font-size: 15px;
         line-height: 1.7;
@@ -52,7 +60,7 @@
         display: block;
         color: #144F38;
         margin: 12px;
-        border-top: 1px;
+        border-top: 2px;
         border-style: solid;
         width: auto;
       }
@@ -71,36 +79,39 @@
         background: #144F38;
         border: none;
         color: white;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         padding: 20px 30px;
-        font-size: 14px;        
-        border-radius: 0.25rem;
-        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
-               
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;        
+        border-radius: 0.25rem;        
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);               
       }
       button:hover {
         cursor: pointer;
         background: white;
         color: #144F38;
+        text-decoration: none;
         transition: all 200ms ease-in-out;
       }
       .block {
         background-color: white;
       }
       .container {
-        max-width: 650px;
+        max-width: 894px;
         margin: 0 auto;
-        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        background: black;
       }
       .line {
           text-align: center;
       }
       .fidelity {
-        color:#D2A662;;
+        color:#D2A662;
       }
       .email-link {
         color: #144F38;
-      } 
+        font-size: 15px;
+        font-weight: 500;
+      }
     </style>
   </head>
   <body>
@@ -121,18 +132,16 @@
     <p>
       The company was founded as Fidelity Management & Research (FMR) by Edward C. Johnson II in 1946.
 
-In 1969, the company formed Fidelity International Limited (FIL) to serve non-U.S. markets and subsequently spun it off in 1980 into an independent entity owned by its employees.
+      In 1969, the company formed Fidelity International Limited (FIL) to serve non-U.S. markets and subsequently spun it off in 1980 into an independent entity owned by its employees.
 
-In 1982, FMR company started offering 401(k) products. In 1984, it offered computerized stock trading.
+      In 1982, FMR company started offering 401(k) products. In 1984, it offered computerized stock trading.
     </p>
     <hr /><div class="line"></div>
     <p>
       <strong><span class="fidelity">In April 2022,</span></strong> Fidelity Investments announced that they will start offering Bitcoin as an investment option, specifically in its 401(k) plans by the middle of the year. It is also the first major 401(k) provider to offer cryptocurrency as an investment for retirement savers, according to CNN. However, this option will only be offered to participants whose employers have elected to include it in their plan, as of now.
-     <em><a href="https://en.wikipedia.org/wiki/Fidelity_Investments" target="blank">
-        <span class="email-link">Click to view more Fidelity Investments Wiki</span></em>
-      </a>
+     <a href="https://en.wikipedia.org/wiki/Fidelity_Investments" target="blank">
+        <span class="email-link">Click to view more Fidelity Investments Wiki</span></a>
     </p>
-    <!-- <hr /> -->
     <p>
       <button>Open Fidelity Account</button>
     </p>
@@ -145,6 +154,11 @@ In 1982, FMR company started offering 401(k) products. In 1984, it offered compu
     let age = prompt("How old are you?");
     if (age >= 18) {
       alert("Congrats " + capName + ", you can start investing in your future today! 🤑");
+    // let anchor = document.createElement('a');
+    // anchor.href = 'https://www.fidelity.com/';
+    // anchor.target="_blank";
+    // anchor.click();
+      // if (key=="smk") { window.open('https://www.fidelity.com/','_blank'); }
       window.location = 'https://www.fidelity.com/';
       } else {
       alert("Sorry " + capName + ", you're not old enough for your own account just yet. 😢");
